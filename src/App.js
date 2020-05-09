@@ -30,12 +30,21 @@ import ClickCounterTwo from './commponents/ClickCounterTwo';
 import HoverCounterTwo from './commponents/HoverCounterTwo';
 import User from './commponents/User';
 import CounterTwo from './commponents/CounterTwo';
-
+import ComponentC from './commponents/ComponentC';
+import {UserProvider} from './commponents/userContext';
+import PostList from './commponents/PostList';
+import Getrequest from './Requests/Getrequest';
+import Postrequest from './Requests/Postrequest';
 export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <CounterTwo render={(count, increamentCount) => (
+        <Postrequest></Postrequest>
+        {/* <Getrequest></Getrequest> */}
+        {/* <UserProvider value = "lalit">
+          <ComponentC></ComponentC>
+        </UserProvider> */}
+        {/* <CounterTwo render={(count, increamentCount) => (
 
           <ClickCounter count={count} increamentCount={increamentCount}></ClickCounter>
         )}></CounterTwo>
@@ -43,7 +52,7 @@ export default class App extends React.Component {
         <CounterTwo render={(count, increamentCount) => (
 
           <HoverCounterTwo count={count} increamentCount={increamentCount}></HoverCounterTwo>
-        )}></CounterTwo>
+        )}></CounterTwo> */}
         {/* <ClickCounterTwo></ClickCounterTwo>
         <HoverCounterTwo></HoverCounterTwo>
          <User render = {(isloggedIn)=> isloggedIn ?'lalit' : 'guest'}></User> */}

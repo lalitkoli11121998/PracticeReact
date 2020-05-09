@@ -1,12 +1,12 @@
     import React, { Component } from 'react';
     
     class ClickCounterTwo extends Component {
-        
+
         render() {
-            const{count} = this.state;
+            const{count,increamentCount} = this.props;
             return (
                 <div>
-                <button onClick = {this.increamentCount}> clicked {count} times</button>
+                <button onClick = {increamentCount}> clicked {count} times</button>
                </div>
             );
         }
